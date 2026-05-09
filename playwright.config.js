@@ -50,6 +50,7 @@ import { defineConfig } from '@playwright/test';
 import path from 'path';
 
 export default defineConfig({
+  globalSetup: './global-setup.js',
   testDir: './tests',
 
   // ✅ ABSOLUTE path to global-setup.js
